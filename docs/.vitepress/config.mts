@@ -180,7 +180,7 @@ const teekConfig = defineTeekConfig({
 
 export default defineConfig({
     extends: teekConfig,
-    base: "/pengzexuan.github.io/",
+    // base: "/pengzexuan.github.io/",
     title: "Zexuan's blog",
     description: "Zexuan's blog; 泽瑄的博客",
     themeConfig: {
