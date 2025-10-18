@@ -1,9 +1,14 @@
 // noinspection JSUnusedGlobalSymbols
 
 import {defineConfig} from 'vitepress'
+// @ts-ignore
+import { defineTeekConfig } from 'vitepress-theme-teek/config'
+
+const teekConfig = defineTeekConfig({});
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    extends: teekConfig,
     base: "/blog/",
     title: "Zexuan's blog",
     description: "Zexuan's blog; 泽瑄的博客",
