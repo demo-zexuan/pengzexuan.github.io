@@ -223,3 +223,4 @@ dist/
 npm-debug.log
 yarn-error.log
 
+/docs/.vitepress/cache/
