@@ -95,7 +95,7 @@ const teekConfig = defineTeekConfig({
         typesShuffle: false,
         description: [
             "故事由我书写，旅程由你见证，传奇由她聆听。",
-            "想一千次，不如努力的去试一次。华丽的跌倒，也胜过无谓的徘徊。"
+            "想一千次，不如努力的去做一次。纵然华丽的跌倒，也胜过无谓的徘徊。"
         ]
     },
 
@@ -159,12 +159,12 @@ const teekConfig = defineTeekConfig({
         {
             icon: "mdi:github",
             name: "GitHub",
-            link: "https://github.com/kele-bingtang",
+            link: "https://github.com/demo-zexuan",
         },
         {
-            icon: "simple-icons:gitee",
-            name: "Gitee",
-            link: "https://gitee.com/kele-bingtang",
+            icon: "material-symbols:stacked-email-rounded",
+            name: "Email",
+            link: "mailto:pengzexuan2001@gmail.com",
         },
     ],
 
