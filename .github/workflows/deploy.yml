@@ -67,7 +67,7 @@ jobs:
           cat > ./crawlerConfig.json <<'JSON'
           {
           	"index_name": "blog",
-          	"start_urls": ["http://blog.pengzexuan.com/**"],
+          	"start_urls": ["http://blog.pengzexuan.com"],
           	"rateLimit": 8,
           	"maxDepth": 10,
           	"selectors": {
