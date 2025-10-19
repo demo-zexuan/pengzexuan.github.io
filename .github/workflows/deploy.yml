@@ -67,7 +67,7 @@ jobs:
           cat > ./crawlerConfig.json <<'JSON'
           {
           	"index_name": "blog",
-          	"start_urls": ["http://blog.pengzexuan.com/"],
+          	"start_urls": ["http://blog.pengzexuan.com/**"],
           	"rateLimit": 8,
           	"maxDepth": 10,
           	"selectors": {
@@ -80,7 +80,6 @@ jobs:
           		"lvl3": ".content h3",
           		"lvl4": ".content h4",
           		"lvl5": ".content h5",
-          		"lvl6": ".content h6",
           		"content": ".content p, .content li",
           		"lang": {
           			"selector": "/html/@lang",
