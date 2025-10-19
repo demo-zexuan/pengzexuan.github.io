@@ -43,6 +43,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
+      - name: Robots.txt
+        run: |
+          echo '# Algolia-Crawler-Verif: B2C1D34A8589407D' > docs/.vitepress/dist/robots.txt
   deploy:
     environment:
       name: github-pages
