@@ -187,8 +187,8 @@ export default defineConfig({
         search: {
             provider: 'algolia',
             options: {
-                appId: 'LRB2LKROT6',
-                apiKey: '8f7b61546764945907e85cc07943735d',
+                appId: 'IY8E95M26L',
+                apiKey: '6c2c2ad05ce9c74513e9b1cd8e7f2b39',
                 indexName: 'blog'
             }
         },
