@@ -100,4 +100,4 @@ jobs:
         env:
           APPLICATION_ID: ${{ secrets.ALGOLIA_APP_ID }}
           API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-          CONFIG: ./crawlerConfig.json
+          CONFIG: ${{ steps.algolia_config.outputs.config }}
