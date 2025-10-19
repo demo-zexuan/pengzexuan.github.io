@@ -39,39 +39,6 @@ jobs:
       - name: Create CNAME
         run: |
           echo 'blog.pengzexuan.com' > docs/.vitepress/dist/CNAME
-      - name: Create crawlerConfig.json
-        run: |
-          cat > docs/.vitepress/dist/crawlerConfig.json <<'JSON'
-          {
-          	"index_name": "blog",
-          	"start_urls": ["http://http://blog.pengzexuan.com/"],
-          	"rateLimit": 8,
-          	"maxDepth": 10,
-          	"selectors": {
-          		"lvl0": {
-          			"selector": "",
-          			"defaultValue": "Documentation"
-          		},
-          		"lvl1": ".content h1",
-          		"lvl2": ".content h2",
-          		"lvl3": ".content h3",
-          		"lvl4": ".content h4",
-          		"lvl5": ".content h5",
-          		"lvl6": ".content h6",
-          		"content": ".content p, .content li",
-          		"lang": {
-          			"selector": "/html/@lang",
-          			"type": "xpath",
-          			"global": true
-          		}
-          	},
-          	"selectors_exclude": ["aside", ".page-footer", ".next-and-prev-link", ".table-of-contents"],
-          	"custom_settings": {
-          		"attributesForFaceting": ["lang", "tags"]
-          	},
-          	"js_render": true
-          }
-          JSON
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -88,6 +55,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
   algolia:
+    needs: deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -99,4 +67,4 @@ jobs:
         env:
           APPLICATION_ID: ${{ secrets.ALGOLIA_APP_ID }}
           API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-          CONFIG: ./crawlerConfig.json
+          CONFIG: ${{ secrets.ALGOLIA_CONFIG }}
