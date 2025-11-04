@@ -184,14 +184,14 @@ export default defineConfig({
     title: "Zexuan's blog",
     description: "Zexuan's blog; 泽瑄的博客",
     themeConfig: {
-        search: {
-            provider: 'algolia',
-            options: {
-                appId: 'IY8E95M26L',
-                apiKey: '6c2c2ad05ce9c74513e9b1cd8e7f2b39',
-                indexName: 'blog'
-            }
-        },
+        // search: {
+        //     provider: 'algolia',
+        //     options: {
+        //         appId: 'IY8E95M26L',
+        //         apiKey: '6c2c2ad05ce9c74513e9b1cd8e7f2b39',
+        //         indexName: 'blog'
+        //     }
+        // },
         nav: [
             {text: 'Home', link: '/'},
             {text: '分类', link: '/pages/categories.md'},
