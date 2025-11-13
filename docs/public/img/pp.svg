@@ -1,0 +1,50 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 标题 -->
+    <text x="195" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">用户&amp;创作者</text>
+    <text x="195" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">需求 + 供给</text>
+    <!-- 上方蓝色框 -->
+    <rect x="120" y="60" width="150" height="60" rx="10" ry="10" fill="#E6F2FF" stroke="#4A90E2" stroke-width="1"/>
+    <!-- 用户图标和相机图标 -->
+    <circle cx="150" cy="90" r="15" fill="white" stroke="black" stroke-width="1"/>
+    <circle cx="150" cy="80" r="8" fill="white" stroke="black" stroke-width="1"/>
+    <rect x="240" y="80" width="25" height="20" fill="white" stroke="black" stroke-width="1" rx="2" ry="2"/>
+    <circle cx="252.5" cy="90" r="5" fill="white" stroke="black" stroke-width="1"/>
+    <rect x="235" y="77" width="10" height="5" fill="white" stroke="black" stroke-width="1"/>
+    <!-- 中间的推荐系统 -->
+    <text x="195" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">推荐系统</text>
+    <!-- 左下角的内容圆圈 -->
+    <circle cx="90" cy="290" r="40" fill="#E8F5E9" stroke="#81C784" stroke-width="1"/>
+    <text x="90" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">内容</text>
+    <text x="90" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">价值 + 参考</text>
+    <!-- 播放按钮图标 -->
+    <circle cx="90" cy="270" r="15" fill="white" stroke="black" stroke-width="1"/>
+    <polygon points="85,265 85,275 98,270" fill="black"/>
+    <!-- 右下角的平台方块 -->
+    <rect x="250" y="250" width="80" height="80" rx="5" ry="5" fill="#FFF8E1" stroke="#FFB74D" stroke-width="1"/>
+    <text x="290" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">平台</text>
+    <text x="290" y="300" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">繁荣 + 信任</text>
+    <!-- 建筑图标 -->
+    <rect x="275" y="260" width="30" height="20" fill="white" stroke="black" stroke-width="1"/>
+    <rect x="280" y="255" width="5" height="5" fill="white" stroke="black" stroke-width="1"/>
+    <rect x="290" y="255" width="5" height="5" fill="white" stroke="black" stroke-width="1"/>
+    <rect x="285" y="245" width="5" height="10" fill="white" stroke="black" stroke-width="1"/>
+    <line x1="275" y1="265" x2="305" y2="265" stroke="black" stroke-width="1"/>
+    <line x1="290" y1="260" x2="295" y2="260" stroke="black" stroke-width="1"/>
+    <!-- 连接线和箭头 -->
+    <!-- 上到左下的线 -->
+    <line x1="140" y1="120" x2="100" y2="250" stroke="#888888" stroke-width="1"/>
+    <polygon points="97,248 103,248 100,255" fill="#888888"/>
+    <text x="95" y="190" font-family="Arial, sans-serif" font-size="10" transform="rotate(-60, 95, 190)" text-anchor="middle">消费 + 反馈</text>
+    <!-- 上到右下的线 -->
+    <line x1="250" y1="120" x2="290" y2="250" stroke="#888888" stroke-width="1"/>
+    <polygon points="287,248 293,248 290,255" fill="#888888"/>
+    <text x="300" y="190" font-family="Arial, sans-serif" font-size="10" transform="rotate(60, 300, 190)" text-anchor="middle">参与 + 支持</text>
+    <!-- 左下到右下的线 -->
+    <line x1="130" y1="290" x2="250" y2="290" stroke="#888888" stroke-width="1"/>
+    <polygon points="248,287 248,293 255,290" fill="#888888"/>
+    <text x="190" y="280" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">分发 &amp; 治理</text>
+    <!-- 右下到左下的线 -->
+    <line x1="250" y1="270" x2="130" y2="270" stroke="#888888" stroke-width="1"/>
+    <polygon points="132,267 132,273 125,270" fill="#888888"/>
+    <text x="190" y="260" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">供给 &amp; 信息</text>
+</svg>
